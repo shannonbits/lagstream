@@ -7,36 +7,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #121212;
             color: white;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
+
         header {
             background-color: #1f1f1f;
             padding: 20px;
             text-align: center;
+            border-bottom: 3px solid #00FFC4;
         }
+
         h1 {
             margin: 0;
             font-size: 36px;
+            color: #00FFC4;
         }
+
         h2 {
             font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff;
         }
+
         section {
             margin: 30px;
         }
+
         a {
             color: #00FFC4;
+            text-decoration: none;
         }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: #1f1f1f;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
             font-size: 14px;
+            color: #888;
+            border-top: 3px solid #00FFC4;
         }
+
+        .btn {
+            background-color: #0066FF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 0;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00FFC4;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .list {
+            margin-left: 20px;
+        }
+
+        .list li {
+            margin-bottom: 10px;
+        }
+
+        .link-section a {
+            font-size: 16px;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        .link-section {
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -46,17 +108,17 @@
     <h2>Network Optimization for Better Gaming</h2>
 </header>
 
-<section>
+<section class="content">
     <h2>Welcome to Lagstream!</h2>
-    <p>Lagstream is a network optimization tool designed to help you reduce lag in games like <strong>Valorant</strong>, and improve overall gaming performance by optimizing your network configuration.</p>
+    <p>Lagstream is a network optimization tool designed to help you reduce lag in games like <strong>Valorant</strong> and improve overall gaming performance by optimizing your network configuration. The app offers several features that help streamline your network setup for the best gaming experience.</p>
 
     <h2>Features:</h2>
-    <ul>
-        <li>Flush DNS</li>
-        <li>Apply Network Tweaks</li>
-        <li>VPN Integration</li>
-        <li>Process Optimization</li>
-        <li>Real-time Logging</li>
+    <ul class="list">
+        <li><strong>Flush DNS:</strong> Clear DNS cache to resolve potential connectivity issues.</li>
+        <li><strong>Apply Network Tweaks:</strong> Optimizes TCP settings for better performance.</li>
+        <li><strong>VPN Integration:</strong> Easily connect to a VPN to reduce ping and improve game stability.</li>
+        <li><strong>Process Optimization:</strong> Set game processes like Valorant to high priority.</li>
+        <li><strong>Real-time Logging:</strong> View optimization logs and detailed status updates in the app.</li>
     </ul>
 
     <h2>Installation</h2>
@@ -72,11 +134,20 @@
     <p><strong>Optimize Now:</strong> Click the "Optimize Now" button to start optimizing your network settings.</p>
     <p><strong>Connect VPN:</strong> Click the "Connect VPN" button to connect to a VPN for reduced ping.</p>
 
-    <h2>Contributing</h2>
-    <p>We welcome contributions to Lagstream! If you find a bug or would like to suggest a feature, feel free to open an issue or submit a pull request.</p>
+    <h2 class="link-section">Links to Content Used:</h2>
+    <ul class="link-section">
+        <li><a href="https://www.vpngate.net/en/" target="_blank">VPNGate - Free VPN server list</a></li>
+        <li><a href="https://openvpn.net/" target="_blank">OpenVPN - VPN Software</a></li>
+    </ul>
 
-    <h2>License</h2>
-    <p>Lagstream is licensed under the MIT License. See the <a href="LICENSE" target="_blank">LICENSE</a> file for more details.</p>
+    <div class="link-section">
+        <h3>Contributing</h3>
+        <p>We welcome contributions to Lagstream! If you find a bug or would like to suggest a feature, feel free to open an issue or submit a pull request.</p>
+    </div>
+
+    <div class="link-section">
+        <button class="btn"><a href="https://github.com/shannonbits/lagstream" target="_blank">Visit GitHub Repository</a></button>
+    </div>
 </section>
 
 <footer>
